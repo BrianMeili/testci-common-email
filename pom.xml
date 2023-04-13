@@ -44,7 +44,7 @@
         <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/email/trunk</connection>
         <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/email/trunk</developerConnection>
         <url>http://svn.apache.org/viewvc/commons/proper/email/trunk</url>
-    </scm> 
+    </scm>
 
     <developers>
         <developer>
@@ -139,7 +139,7 @@
         <developer>
             <name>Siegfried Goeschl</name>
             <id>sgoeschl</id>
-            <email>sgoeschl@apache.org</email>            
+            <email>sgoeschl@apache.org</email>
             <roles>
               <role>Java Developer</role>
             </roles>
@@ -151,16 +151,16 @@
             <email>tn@apache.org</email>
             <organization>The Apache Software Foundation</organization>
             <roles />
-        </developer>        
+        </developer>
     </developers>
-    <contributors>    
+    <contributors>
         <contributor>
             <name>Bindul Bhowmik</name>
         </contributor>
         <contributor>
             <name>Colin Chalmers</name>
             <email>colin.chalmers@maxware.nl</email>
-        </contributor> 
+        </contributor>
         <contributor>
             <name>Frank Y. Kim</name>
             <email>frank.kim@clearink.com</email>
@@ -275,15 +275,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>1.5</maven.compiler.source>
-        <maven.compiler.target>1.5</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <commons.componentid>email</commons.componentid>
         <commons.jira.id>EMAIL</commons.jira.id>
         <commons.jira.pid>12310474</commons.jira.pid>
         <commons.release.version>1.3.2</commons.release.version>
         <commons.rc.version>RC2</commons.rc.version>
         <commons.binary.suffix>-bin</commons.binary.suffix>
-    </properties> 
+    </properties>
 
     <build>
      <pluginManagement>
@@ -321,7 +321,7 @@
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>            
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
@@ -347,9 +347,9 @@
         <id>apache.website</id>
         <name>Apache Website</name>
         <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/email/</url>
-      </site>    
+      </site>
     </distributionManagement>
-    
+
     <reporting>
         <plugins>
             <!-- generate the changes report from changes.xml -->
@@ -366,7 +366,7 @@
                         </reports>
                     </reportSet>
                 </reportSets>
-            </plugin> 
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -407,7 +407,7 @@
                         <exclude>src/test/resources/eml/*.eml</exclude>
                     </excludes>
                 </configuration>
-            </plugin>            
+            </plugin>
         </plugins>
     </reporting>
 
